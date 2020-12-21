@@ -1,0 +1,215 @@
+@font-face {
+  font-family: "Lato";
+  src: url(/fonts/Lato-Light.ttf?d92647541fd5192917e0f388a854db0b) format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Lato";
+  src: url(/fonts/Lato-Bold.ttf?bb154e8dcbf157f82e9b7dda6a839758) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: fallback;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.light {
+  background-color: #f5f5ff;
+  transition: background-color 0.3s ease-in-out;
+}
+.light .home-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.light .home-wrapper .home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 121px;
+  color: #000000;
+  background-color: #ffffff;
+  transition: all 0.3s ease-in-out;
+  width: 430px;
+  height: 121px;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.light .converter-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.light .converter-wrapper .converter {
+  border-radius: 1rem;
+  color: #000000;
+  font-size: 16px;
+  background-color: #ffffff;
+  transition: all 0.3s ease-in-out;
+  width: 720px;
+  padding: 40px 48px;
+}
+.light .converter-wrapper .converter .form-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.light .converter-wrapper .converter .form-line:last-child {
+  margin-bottom: none;
+}
+.light .converter-wrapper .converter .form-line .field-wrapper {
+  width: 224px;
+  border-radius: 1rem;
+}
+.light .converter-wrapper .converter .form-line .field-wrapper .label {
+  color: #000000;
+  padding-bottom: 15px;
+}
+.light .converter-wrapper .converter .form-line .field-wrapper .input-wrapper {
+  height: 58px;
+  background-color: #f5f5ff;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.light .converter-wrapper .converter .form-line .field-wrapper .input-wrapper input,
+.light .converter-wrapper .converter .form-line .field-wrapper .input-wrapper select {
+  width: auto;
+  text-align: center;
+  border: none;
+  outline: none;
+  color: #2929cc;
+  font-size: 16px;
+  background-color: transparent;
+}
+.light .converter-wrapper .converter .form-line .currency-select {
+  width: 112px !important;
+}
+.light .toggle-theme {
+  width: 100px;
+  height: 52px;
+  margin-bottom: 45px;
+  transition: background-image 0.3s ease-in-out;
+  background-image: url(/images/daynight.svg?e7601d2524696da9c28f705837622209);
+  cursor: pointer;
+}
+
+.dark {
+  background-color: #242432;
+  transition: background-color 0.3s ease-in-out;
+}
+.dark .home-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dark .home-wrapper .home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 121px;
+  color: #ffffff;
+  background-color: #3b3b49;
+  transition: all 0.3s ease-in-out;
+  width: 430px;
+  height: 121px;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.dark .converter-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dark .converter-wrapper .converter {
+  border-radius: 1rem;
+  color: #fba700;
+  font-size: 16px;
+  background-color: #31313e;
+  transition: all 0.3s ease-in-out;
+  width: 720px;
+  padding: 40px 48px;
+}
+.dark .converter-wrapper .converter .form-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.dark .converter-wrapper .converter .form-line:last-child {
+  margin-bottom: none;
+}
+.dark .converter-wrapper .converter .form-line .field-wrapper {
+  width: 224px;
+  border-radius: 1rem;
+}
+.dark .converter-wrapper .converter .form-line .field-wrapper .label {
+  color: #ffffff;
+  padding-bottom: 15px;
+}
+.dark .converter-wrapper .converter .form-line .field-wrapper .input-wrapper {
+  height: 58px;
+  background-color: #3b3b49;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.dark .converter-wrapper .converter .form-line .field-wrapper .input-wrapper input,
+.dark .converter-wrapper .converter .form-line .field-wrapper .input-wrapper select {
+  width: auto;
+  text-align: center;
+  border: none;
+  outline: none;
+  color: #fba700;
+  font-size: 16px;
+  background-color: transparent;
+}
+.dark .converter-wrapper .converter .form-line .currency-select {
+  width: 112px !important;
+}
+.dark .toggle-theme {
+  width: 100px;
+  height: 52px;
+  margin-bottom: 45px;
+  transition: background-image 0.3s ease-in-out;
+  background-image: url(/images/night.svg?7c3c9b7863425390a8425d30e98a528a);
+  cursor: pointer;
+}
+
+.form-line {
+  display: flex;
+  justify-content: space-between;
+}
+.form-line .input-field {
+  margin-right: 42px;
+}
+.form-line .input-field:last-child {
+  margin-right: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato;
+}
+
+#app {
+  width: 100%;
+  height: 100vh;
+}

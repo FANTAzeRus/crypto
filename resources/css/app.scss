@@ -1,0 +1,33 @@
+@mixin font($font-family, $font-file, $font-weight) {
+    @font-face {
+        font-family: $font-family;
+        src: url($font-file) format("truetype");
+        font-weight: $font-weight;
+        font-style: normal;
+        font-display: fallback;
+    }
+}
+
+@include font(
+    "Lato",
+    "/Volumes/Work/WorkProjects/crypto/public/Fonts/Lato2OFL/Lato-Light.ttf",
+    100
+);
+@include font(
+    "Lato",
+    "/Volumes/Work/WorkProjects/crypto/public/Fonts/Lato2OFL/Lato-Bold.ttf",
+    600
+);
+
+@import "theme";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato;
+}
+
+#app {
+    width: 100%;
+    height: 100vh;
+}
